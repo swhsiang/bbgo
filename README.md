@@ -90,6 +90,13 @@ To run strategy:
 dotenv -f .env.local -- bbgo run --config config/buyandhold.yaml
 ```
 
+### Alternative Installation
+
+```{shell}
+docker build -t bbgo:latest .
+docker run -it --rm --env-file .env.local bbgo:test ./bbgo <bbgo command> 
+```
+
 ## Built-in Strategies
 
 Check out the strategy directory [strategy](pkg/strategy) for all built-in strategies:
